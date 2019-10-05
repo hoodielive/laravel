@@ -12,10 +12,11 @@
     </head>
     <body>
         <ul>
-            <?php foreach ($names as $name) : ?> 
-                <li><?= $name; ?></li>
+            <?php foreach ($task as $heading => $value) : ?>
+                <li>
+                    <strong><?= ucwords($heading); ?>:</strong> <?= $value; ?> 
+                </li>
             <?php endforeach; ?>
         </ul>
-
     </body>
 </html>

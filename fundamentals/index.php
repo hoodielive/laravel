@@ -6,3 +6,5 @@ $task = [
     'assigned_to' => 'Larry', 
     'completed' => false
 ];
+
+require 'index.view.php';
