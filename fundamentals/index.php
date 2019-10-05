@@ -7,4 +7,11 @@ $task = [
     'completed' => false
 ];
 
+function dumper($one, $two, $three) {
+    var_dump($one, $two, $three);
+}
+
+
+dd('hello', 'big', 'world');
+
 require 'index2.view.php';
