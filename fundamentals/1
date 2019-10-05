@@ -1,0 +1,13 @@
+<?php
+
+
+class Report 
+{
+	public function generate($user) 
+	{
+		echo( "hello, aeon");
+	}
+}
+
+Report report = new Report("larry");
+var_dump(report); 
