@@ -7,4 +7,4 @@ $task = [
     'completed' => false
 ];
 
-require 'index.view.php';
+require 'index2.view.php';
