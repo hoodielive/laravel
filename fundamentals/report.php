@@ -10,4 +10,4 @@ class Report
 }
 
 $report = new Report();
-var_dump(report.generate("larry")); 
+var_dump(report);
