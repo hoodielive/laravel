@@ -1,14 +1,8 @@
 <?php 
 
-$names = [ 
-    'larry', 
-    'kesha', 
-    'brandon'
+$task = [
+    'title' => 'Finish homework', 
+    'due'   => 'today', 
+    'assigned_to' => 'Larry', 
+    'completed' => false
 ];
-
-foreach ($names as $name)
-{
-    echo $name. ', '; 
-}
-
-require 'index.view.php'; 
