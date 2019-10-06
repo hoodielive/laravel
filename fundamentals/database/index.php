@@ -1,11 +1,11 @@
 <?php 
 
-require 'functions.php'; 
+#require 'functions.php'; 
 
-require 'database/connection.php'; 
+#require 'connection.php'; 
 
-require 'Task.php'; 
+#require 'Task.php'; 
 
-$pdo = Connection::make(); 
+#$pdo = Connection::make(); 
 
-$tasks = fetchAllTasks($pdo);
+#$tasks = fetchAllTasks($pdo);
