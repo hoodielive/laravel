@@ -1,17 +1,13 @@
 <?php 
 
-$pdo = new PDO('mysql:host=127.0.0.1;dbname=mytodo', 'laradev', '*07AF1DA1167810656EC10D04870D5E34E01316CB');
-// try {
-
-//     $pdo = new PDO('mysql:host=127.0.0.1;dbname=mytodo', 'laradev', '*07AF1DA1167810656EC10D04870D5E34E01316CB');
-// } catch (PDOException $e) {
-//     die('Could not connect.');
-// }
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=mytodo', 'laradev', 'password');
 
 $statement = $pdo->prepare('select * from todos');
 
 $statement->execute();
 
-var_dump($statement->fetchAll());
+$results = $statement->fetchAll(PDO::FETCH_OBJ);
 
-require 'index3.view.php';
+var_dump($results[0]);
+
+#require 'index3.view.php';
