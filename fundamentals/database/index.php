@@ -1,7 +1,9 @@
 <?php 
 
 require 'functions.php'; 
+
 require 'database/connection.php'; 
+
 require 'Task.php'; 
 
 $pdo = Connection::make(); 
