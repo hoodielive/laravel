@@ -1,27 +1,27 @@
-<?php 
+<?php
 
 class Contractor
 {
-	protected $electrician; 
+	protected $electrician;
 
-	public function __construct($electrician, $plumber, $designer) 
+	public function __construct($electrician, $plumber, $designer)
 	{
 		$this->electrician = $electrician;
 		$this->plumber = $plumber;
 		$this->designer = $designer;
 	}
 
-	public function performWork() 
+	public function performWork()
 	{
-		return $this->electrician . " is " . $this->plumber . " and is moving forth with " . $this->designer;		
+		return $this->electrician . " is " . $this->plumber . " and is moving forth with " . $this->designer;
 	}
 }
 
 $contractor = new Contractor(
-	'Vincent', 
-	'Innovative', 
+	'Vincent',
+	'Innovative',
 	'Design Ambitions'
-); 
+);
 
-var_dump($contractor->performWork()); 
+var_dump($contractor->performWork());
 
